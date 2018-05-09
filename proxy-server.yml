@@ -20,13 +20,13 @@ zuul:
     website-application:
       path: /**
       serviceId: website-application
-      sensitiveHeaders:
+      sensitiveHeaders: Authorization
     news-application:
       path: /news/**
       serviceId: news-application
-      sensitiveHeaders:
+      sensitiveHeaders: Authorization
     admin-application:
       path: /admin/**
       serviceId: admin-application
-      sensitiveHeaders:
-zuul.sensitiveHeaders: 
+      sensitiveHeaders: Authorization
+      
