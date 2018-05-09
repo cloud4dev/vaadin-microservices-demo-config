@@ -29,3 +29,4 @@ zuul:
       path: /admin/**
       serviceId: admin-application
       sensitiveHeaders:
+zuul.sensitiveHeaders: 
