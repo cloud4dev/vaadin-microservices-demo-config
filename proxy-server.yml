@@ -4,7 +4,15 @@ ribbon:
   serverListRefreshInterval: 1000
   ConnectTimeout: 6000
   ReadTimeout: 3000
-  SocketTimeout: 6000
+  SocketTimeout: 60000
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 30000
 
 zuul:
   ignoredServices: '*'
