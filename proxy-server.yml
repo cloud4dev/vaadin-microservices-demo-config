@@ -20,13 +20,15 @@ zuul:
     website-application:
       path: /**
       serviceId: website-application
-      sensitiveHeaders: Authorization
+      sensitiveHeaders: 
     news-application:
       path: /news/**
       serviceId: news-application
-      sensitiveHeaders: Authorization
+      sensitiveHeaders: 
     admin-application:
       path: /admin/**
       serviceId: admin-application
-      sensitiveHeaders: Authorization
-      
+      sensitiveHeaders: 
+  add-proxy-headers: true
+  
+    
